@@ -19,5 +19,8 @@
   "homepage": "https://github.com/VituPRX/Teste-ebac-ui#readme",
   "dependencies": {
     "cypress": "^8.0.0"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3"
   }
 }

@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-
+const perfil = require('../fixtures/perfil.json')
 describe('Funcionalidade Endereços - Faturamento e entrega', () => {
     beforeEach(() => {
         cy.visit('minha-conta')

@@ -7,10 +7,6 @@ context('funcionalidade login', () => {
         cy.visit('minha-conta')
     });
 
-    afterEach(() => {
-        cy.screenshot()
-    });
-
     it('deve fazer login com sucesso', () => {
 
         cy.get('#username').type('vitor_ebac@teste.com')
@@ -30,7 +26,7 @@ context('funcionalidade login', () => {
         cy.get('.page-title').should('contain', 'Minha conta')
     });
 
-    it.only('Deve fazer login com sucesso - Usando fixture', () => {
+    it('Deve fazer login com sucesso - Usando fixture', () => {
         cy.fixture('perfil').then(dados => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha, {log: false})
